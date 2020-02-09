@@ -6,6 +6,21 @@ if status --is-interactive
     abbr -a vim nvim
     abbr -a v nvim
     abbr -a sue sudoedit
+    
+    ### SSH
+    abbr -a s ssh
+    abbr -a sf sshfs
+    
+    ### Systemd
+    abbr -a sds 'systemctl status'
+    abbr -a sdst 'sudo systemctl start'
+    abbr -a sdsp 'sudo systemctl stop'
+    abbr -a sdrs 'sudo systemctl restart'
+    abbr -a sden 'sudo systemctl enable'
+    abbr -a sdds 'sudo systemctl disable'
+    # Journal
+    abbr -a jl 'journalctl'
+    abbr -a jlu 'journalctl -u'
 
     ### Git
     abbr -a gcl 'git clone'
