@@ -17,9 +17,9 @@ if status --is-interactive
     abbr -a gall 'git add -A'
     abbr -a grm 'git rm'
     # Commit
-    abbr -a gc 'git commit'
-    abbr -a gca 'git commit -a'
-    abbr -a gci 'git commit -i'
+    abbr -a gc 'git commit -v'
+    abbr -a gca 'git commit -v -a'
+    abbr -a gci 'git commit -v -i'
     # Push/Pull
     abbr -a gp 'git push'
     abbr -a gl 'git pull'

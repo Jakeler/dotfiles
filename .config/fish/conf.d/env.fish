@@ -24,3 +24,5 @@ end
 # tmux
 set -x TMUX_TMPDIR $XDG_RUNTIME_DIR
 
+# PATH
+set -px fish_user_paths /home/jk/.gem/ruby/*/bin/
