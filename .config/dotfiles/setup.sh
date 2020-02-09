@@ -3,7 +3,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config status.showUntrackedFiles no
 
 # Package installs
-yay -S fish
+yay -S fish autojump
 yay -S neovim
 yay -S rofi rofi-calc
 
