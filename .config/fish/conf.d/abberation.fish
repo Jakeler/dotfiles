@@ -37,9 +37,13 @@ if status --is-interactive
     abbr -a gci 'git commit -v -i'
     # Push/Pull
     abbr -a gp 'git push'
-    abbr -a gl 'git pull'
     abbr -a gpl 'git pull'
     abbr -a gpp 'git pull && git push'
+    # Log
+    abbr -a gl 'git log'
+    # Stash
+    abbr -a gst 'git stash'
+    abbr -a gstp 'git stash pop'
     # Checkout
     abbr -a gco 'git checkout'
     abbr -a gcob 'git checkout -b'
