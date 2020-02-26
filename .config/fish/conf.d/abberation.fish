@@ -21,6 +21,11 @@ if status --is-interactive
     # Journal
     abbr -a jl 'journalctl'
     abbr -a jlu 'journalctl -u'
+    
+    # Python
+    abbr -a py 'python'
+    abbr -a py3 'python3'
+    abbr -a py2 'python2'
 
     ### Git
     abbr -a gcl 'git clone'
