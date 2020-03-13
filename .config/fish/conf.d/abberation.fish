@@ -22,6 +22,10 @@ if status --is-interactive
     abbr -a jl 'journalctl'
     abbr -a jlu 'journalctl -u'
     
+    # Mounts
+    abbr -a m sudo mount
+    abbr -a um sudo umount
+    
     # Python
     abbr -a py 'python'
     abbr -a py3 'python3'
