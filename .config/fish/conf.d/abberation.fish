@@ -30,6 +30,15 @@ if status --is-interactive
     abbr -a py 'python'
     abbr -a py3 'python3'
     abbr -a py2 'python2'
+    
+    # Package Manager
+    abbr -a y 'yay'
+    abbr -a yqi 'yay -Qi'
+    abbr -a yqo 'yay -Qo'
+    abbr -a ys 'yay -S'
+    abbr -a ysi 'yay -Si'
+    abbr -a yr 'yay -Rs'
+    abbr -a yu 'yay -U'
 
     ### Git
     abbr -a gcl 'git clone'
