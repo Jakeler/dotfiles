@@ -40,6 +40,7 @@ if status --is-interactive
     abbr -a yr 'yay -Rs'
     abbr -a yu 'yay -U'
 
+
     ### Git
     abbr -a gcl 'git clone'
     abbr -a gf 'git fetch'
@@ -49,6 +50,7 @@ if status --is-interactive
     abbr -a ga 'git add'
     abbr -a gall 'git add -A'
     abbr -a grm 'git rm'
+    abbr -a grmc 'git rm --cached'
     # Commit
     abbr -a gc 'git commit -v'
     abbr -a gca 'git commit -v -a'
@@ -71,12 +73,18 @@ if status --is-interactive
     abbr -a gta 'git tag -a'
     abbr -a gtd 'git tag -d'
     abbr -a gtl 'git tag -l'
-    # Other
+    # Info
     abbr -a gd 'git diff'
     abbr -a gs 'git status'
     abbr -a gss 'git status -s'
+    abbr -a gbl 'git blame'
+    abbr -a gsh 'git show'
     # Submodules
     abbr -a gsm 'git submodule'
     abbr -a gsmu 'git submodule update --recursive --remote'
+    # Reset
+    abbr -a gr 'git reset'
+    abbr -a grs 'git reset --soft'
+    abbr -a grh 'git reset --hard'
 
 end
