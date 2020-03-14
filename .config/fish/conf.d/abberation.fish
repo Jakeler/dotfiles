@@ -40,6 +40,10 @@ if status --is-interactive
     abbr -a yr 'yay -Rs'
     abbr -a yu 'yay -U'
 
+    # Help
+    abbr -a m 'man'
+    abbr -a td 'tldr'
+    abbr -a fu 'fuck'
 
     ### Git
     abbr -a gcl 'git clone'
