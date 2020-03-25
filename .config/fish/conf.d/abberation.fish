@@ -23,8 +23,9 @@ if status --is-interactive
     abbr -a jlu 'journalctl -u'
     
     # Mounts
-    abbr -a m sudo mount
-    abbr -a um sudo umount
+    abbr -a m 'sudo mount'
+    abbr -a um 'sudo umount'
+    abbr -a fum 'fusermount -u'
     
     # Python
     abbr -a py 'python'
@@ -41,9 +42,25 @@ if status --is-interactive
     abbr -a yu 'yay -U'
 
     # Help
-    abbr -a m 'man'
+#     abbr -a m 'man'
     abbr -a td 'tldr'
     abbr -a fu 'fuck'
+    
+    # Backup
+    abbr -a b 'borg'
+    abbr -a bi 'borg info'
+    abbr -a bl 'borg list'
+    abbr -a bd 'borg delete'
+    abbr -a bm 'borg mount'
+    abbr -a rc 'rclone config'
+    # Remote
+    abbr -a rlr 'rclone listremotes --long'
+    abbr -a rs 'rclone --b2-versions size'
+    abbr -a rls 'rclone ls --max-depth 1'
+    abbr -a rlsl 'rclone lsl --max-depth 1'
+    abbr -a rsy 'rclone sync -P --transfers 32'
+    abbr -a rck 'rclone check -P --transfers 32'
+    abbr -a rclu 'rclone cleanup -P --transfers 32'
 
     ### Git
     abbr -a gcl 'git clone'
