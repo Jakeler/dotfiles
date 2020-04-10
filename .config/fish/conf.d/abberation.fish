@@ -1,6 +1,14 @@
 if status --is-interactive
     ### Dotfiles
-    abbr -a dg dotfiles
+    abbr -a dg 'dotfiles'
+    abbr -a dgs 'dotfiles status'
+    abbr -a dgl 'dotfiles log'
+    abbr -a dga 'dotfiles add'
+    abbr -a dgc 'dotfiles commit -v'
+    abbr -a dgca 'dotfiles commit -v -a'
+    abbr -a dgp 'dotfiles push'
+    abbr -a dgpl 'dotfiles pull'
+    
     
     ### Editor
     abbr -a vim nvim
