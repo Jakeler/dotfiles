@@ -107,5 +107,9 @@ if status --is-interactive
     abbr -a gr 'git reset'
     abbr -a grs 'git reset --soft'
     abbr -a grh 'git reset --hard'
+    
+    ### AUR
+    abbr -a acl 'clone-aur'
+    abbr -a aup 'upd-aur'
 
 end
