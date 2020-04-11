@@ -39,7 +39,10 @@ if status --is-interactive
     abbr -a py 'python'
     abbr -a py3 'python3'
     abbr -a py2 'python2'
-    
+    abbr -a pyve 'python -m venv venv'
+    abbr -a pyhttp 'python -m http.server'
+    abbr -a pyftp 'python -m pyftpdlib'
+
     # Package Manager
     abbr -a y 'yay'
     abbr -a yqi 'yay -Qi'
