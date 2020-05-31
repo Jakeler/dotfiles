@@ -97,5 +97,6 @@ function fish_prompt --description 'Informative prompt with VCS, exit status and
     end
     
     # Output
-    echo -n $colored_date $colored_host $colored_pwd $colored_vcs $colored_duration $prompt_status "$suffix "
+#     echo -n $colored_date $colored_host $colored_pwd $colored_vcs $colored_duration $prompt_status "$suffix "
+    echo -n $colored_host $colored_pwd $colored_vcs $prompt_status "$suffix "
 end
