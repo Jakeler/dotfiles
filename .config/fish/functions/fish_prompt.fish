@@ -82,7 +82,11 @@ function fish_prompt --description 'Informative prompt with VCS, exit status and
     set -l colored_vcs (string trim (fish_vcs_prompt))
     
     # Time
-    set -l colored_duration (set_color white --bold)(math -s2 $CMD_DURATION/1000)$normal
+    set -l dur (math -s2 $CMD_DURATION/1000)
+    set -l colored_duration
+    if test $dur -gt 0
+        set colored_duration (set_color white --bold)$dur$normal
+    end
     
     # Status
     set -l prompt_status
