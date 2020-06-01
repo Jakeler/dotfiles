@@ -88,15 +88,8 @@ function fish_prompt --description 'Informative prompt with VCS, exit status and
         set colored_duration (set_color white --bold)$dur$normal
     end
     
-    # Status
-    set -l prompt_status
-    if test $last_status -ne 0
-        set prompt_status (set_color --bold $fish_color_status)"[$last_status]"$normal
-    else
-        set prompt_status (set_color green)"[$last_status]"$normal
-    end
-    
+   
     # Output
 #     echo -n $colored_date $colored_host $colored_pwd $colored_vcs $colored_duration $prompt_status "$suffix "
-    echo -n $colored_host $colored_pwd $colored_vcs $prompt_status "$suffix "
+    echo -n $colored_host $colored_pwd $colored_vcs "$suffix "
 end

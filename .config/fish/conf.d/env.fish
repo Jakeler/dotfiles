@@ -34,3 +34,7 @@ set -x TMUX_TMPDIR $XDG_RUNTIME_DIR
 
 # PATH
 set -px fish_user_paths /home/jk/.gem/ruby/*/bin/
+
+# Fish Timer
+set -x fish_command_timer_color cyan
+set -x fish_command_timer_time_format '%X'
