@@ -4,7 +4,7 @@ function upd-aur --description 'Update pkgbuild to new version'
 	set new_rel 1;
 	sed -E "s#(pkgrel=).*#\1$new_rel#" -i PKGBUILD
 	
-	updpkgsums
+	updpkgsums; or return 1
 	makepkg --printsrcinfo > .SRCINFO
 	
 	git commit -v -a -m "Update to $new_ver"
