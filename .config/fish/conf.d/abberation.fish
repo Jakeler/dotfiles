@@ -8,6 +8,7 @@ if status --is-interactive
     abbr -a dgca 'dotfiles commit -v -a'
     abbr -a dgp 'dotfiles push'
     abbr -a dgpl 'dotfiles pull'
+    abbr -a dgd 'dotfiles diff'
     
     
     ### Editor
@@ -26,6 +27,7 @@ if status --is-interactive
     abbr -a sdrs 'sudo systemctl restart'
     abbr -a sden 'sudo systemctl enable'
     abbr -a sdds 'sudo systemctl disable'
+    abbr -a srld 'systemctl daemon-reload'
     # Journal
     abbr -a jl 'journalctl'
     abbr -a jlu 'journalctl -u'
@@ -87,8 +89,13 @@ if status --is-interactive
     abbr -a gc 'git commit -v'
     abbr -a gca 'git commit -v -a'
     abbr -a gci 'git commit -v -i'
+    # Branch
+    abbr -a gbr 'git branch'
+    abbr -a gbrl 'git branch -l'
+    abbr -a gbrd 'git branch -d'
     # Push/Pull
     abbr -a gp 'git push'
+    abbr -a gpd 'git push origin -d'
     abbr -a gpl 'git pull'
     abbr -a gpp 'git pull && git push'
     # Log
