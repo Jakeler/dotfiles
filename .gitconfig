@@ -1,0 +1,9 @@
+# Das ist Git's benutzerspezifische Konfiguraionsdatei.
+[user]
+	name = Jake
+	email = git@ja-ke.tech
+[core]
+[color]
+	ui = auto
+[pull]
+	rebase = true
