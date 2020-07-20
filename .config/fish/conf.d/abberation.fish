@@ -125,9 +125,15 @@ if status --is-interactive
     abbr -a gr 'git reset'
     abbr -a grs 'git reset --soft'
     abbr -a grh 'git reset --hard'
-    
+
     ### AUR
     abbr -a acl 'clone-aur'
     abbr -a aup 'upd-aur'
+
+    ### Find last modified files
+    abbr -a fm1 'stderred find . -mmin -1'
+    abbr -a fm10 'stderred find . -mmin -10'
+    abbr -a fmf10 'stderred find . -type f -mmin -10'
+    abbr -a fm60 'stderred find . -mmin -60'
 
 end
