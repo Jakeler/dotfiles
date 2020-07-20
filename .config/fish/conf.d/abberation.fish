@@ -138,5 +138,6 @@ if status --is-interactive
 
     ### Fix folder mtime
     abbr -a dum 'dir-update-mtime'
+    abbr -a dumr 'dir-update-mtime-recursive'
 
 end
