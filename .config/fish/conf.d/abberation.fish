@@ -136,4 +136,7 @@ if status --is-interactive
     abbr -a fmf10 'stderred find . -type f -mmin -10'
     abbr -a fm60 'stderred find . -mmin -60'
 
+    ### Fix folder mtime
+    abbr -a dum 'dir-update-mtime'
+
 end
