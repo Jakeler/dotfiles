@@ -9,12 +9,16 @@ function dir-update-mtime --description 'Modify mtime of current folder to match
     else
         set dir_path .
     end
+    set -l exp_path (readlink -f $dir_path)
 
     set -l last_file (find $dir_path -type f -printf '%T+=%p\n' | sort | tail -n 1)
+    if test -z $last_file
+        echo (with_color red "No file found in $exp_path")
+        return 1
+    end
     touch -r (echo $last_file | cut -d= -f2-) $dir_path;
     
     # Colorful split output
-    set -l exp_path (readlink -f $dir_path)
     set -l split_src (string split '=' $last_file)
     set -l time_split (string split '+' $split_src[1])
     echo -n 'Set directory: '(with_color cyan $exp_path)
