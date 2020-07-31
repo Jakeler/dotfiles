@@ -6,4 +6,5 @@
 [color]
 	ui = auto
 [pull]
-	rebase = true
+	ff = only
+#	rebase = true
