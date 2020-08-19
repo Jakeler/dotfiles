@@ -140,4 +140,7 @@ if status --is-interactive
     abbr -a dum 'dir-update-mtime'
     abbr -a dumr 'dir-update-mtime-recursive'
 
+    # Dev
+    abbr -a c 'code .'
+
 end
