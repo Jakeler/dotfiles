@@ -76,9 +76,11 @@ if status --is-interactive
     abbr -a rclu 'rclone cleanup -P --transfers 32'
 
     ### Git
+    abbr -a g 'git'
     abbr -a gcl 'git clone'
     abbr -a gf 'git fetch'
     abbr -a gm 'git merge'
+    abbr -a grb 'git rebase'
     abbr -a gcp 'git cherry-pick'
     # Stage
     abbr -a ga 'git add'
@@ -107,6 +109,8 @@ if status --is-interactive
     abbr -a gco 'git checkout'
     abbr -a gcob 'git checkout -b'
     abbr -a gcom 'git checkout master'
+    # Switch
+    abbr -a gsw 'git switch'
     # Tag
     abbr -a gt 'git tag'
     abbr -a gta 'git tag -a'
@@ -118,6 +122,11 @@ if status --is-interactive
     abbr -a gss 'git status -s'
     abbr -a gbl 'git blame'
     abbr -a gsh 'git show'
+    # Remote
+    abbr -a grt 'git remote'
+    abbr -a grtv 'git remote -v'
+    abbr -a grta 'git remote add'
+    abbr -a grtr 'git remote remove'
     # Submodules
     abbr -a gsm 'git submodule'
     abbr -a gsmu 'git submodule update --recursive --remote'
