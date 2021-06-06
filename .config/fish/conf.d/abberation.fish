@@ -27,7 +27,15 @@ if status --is-interactive
     abbr -a sdrs 'sudo systemctl restart'
     abbr -a sden 'sudo systemctl enable'
     abbr -a sdds 'sudo systemctl disable'
-    abbr -a srld 'systemctl daemon-reload'
+    abbr -a sdld 'systemctl daemon-reload'
+    ### Systemd USer
+    abbr -a sdus 'systemctl --user status'
+    abbr -a sdust 'systemctl --user start'
+    abbr -a sdusp 'systemctl --user stop'
+    abbr -a sdurs 'systemctl --user restart'
+    abbr -a sduen 'systemctl --user enable'
+    abbr -a sduds 'systemctl --user disable'
+    abbr -a sduld 'systemctl --user daemon-reload'
     # Journal
     abbr -a jl 'journalctl'
     abbr -a jlu 'journalctl -u'
