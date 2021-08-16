@@ -2,7 +2,14 @@
 [user]
 	name = Jake
 	email = git@ja-ke.tech
+	signingkey = 5EEDE26474E28FF2
+
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
 [core]
+
 [color]
 	ui = auto
 [pull]
