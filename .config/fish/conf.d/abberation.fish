@@ -53,6 +53,10 @@ if status --is-interactive
     abbr -a spve 'source venv/bin/activate.fish'
     abbr -a pyhttp 'python -m http.server'
     abbr -a pyftp 'python -m pyftpdlib'
+    # pip
+    abbr -a pi 'pip install'
+    abbr -a pu 'pip uininstall'
+    abbr -a pl 'pip list'
 
     # Package Manager
     abbr -a y 'yay'
