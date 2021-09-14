@@ -49,7 +49,8 @@ if status --is-interactive
     abbr -a py 'python'
     abbr -a py3 'python3'
     abbr -a py2 'python2'
-    abbr -a pyve 'python -m venv venv'
+    abbr -a pyve 'python -m venv venv --system-site-packages; source venv/bin/activate.fish'
+    abbr -a spve 'source venv/bin/activate.fish'
     abbr -a pyhttp 'python -m http.server'
     abbr -a pyftp 'python -m pyftpdlib'
 
