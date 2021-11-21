@@ -61,11 +61,16 @@ listview {
 }
 element {
     border:  0;
-    padding: 5px ;
+    padding: 0px ;
 }
 element-text {
-    background-color: inherit;
+    background-color: @background;
     text-color:       inherit;
+    padding: 5px;
+}
+element-icon {
+    size: 2ch;
+    padding: 5px;
 }
 element.normal.normal {
     background-color: @normal-background;
