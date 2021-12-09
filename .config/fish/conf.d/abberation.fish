@@ -151,6 +151,8 @@ if status --is-interactive
     ### AUR
     abbr -a acl 'clone-aur'
     abbr -a aup 'upd-aur'
+    abbr -a ap 'git push; aurpublish'
+    abbr -a al 'aurpublish log'
 
     ### Find last modified files
     abbr -a fm1 'stderred find . -mmin -1'
