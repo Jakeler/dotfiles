@@ -7,6 +7,9 @@ function upd-aur --description 'Update pkgbuild to new version'
 	updpkgsums; or return 1
 	makepkg --printsrcinfo > .SRCINFO
 
+	# Acutally build the damn thing
+	makepkg -Cfsi
+
         # Use aurpublish hooks, does not need -m "Update to $new_ver ($new_rel)"
 	git commit -v -a
 
