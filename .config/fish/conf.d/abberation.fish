@@ -59,13 +59,15 @@ if status --is-interactive
     abbr -a pl 'pip list'
 
     # Package Manager
-    abbr -a y 'yay'
-    abbr -a yqi 'yay -Qi'
-    abbr -a yqo 'yay -Qo'
-    abbr -a ys 'yay -S'
-    abbr -a ysi 'yay -Si'
-    abbr -a yr 'yay -Rs'
-    abbr -a yu 'yay -U'
+    set -l aur_helper paru
+    abbr -a y "$aur_helper"
+    abbr -a yqi "$aur_helper -Qi"
+    abbr -a yqo "$aur_helper -Qo"
+    abbr -a ys "$aur_helper -S"
+    abbr -a ysi "$aur_helper -Si"
+    abbr -a yr "$aur_helper -Rs"
+    abbr -a yu "$aur_helper -U"
+    abbr -a yc "$aur_helper -Gc"
 
     # Help
 #     abbr -a m 'man'
