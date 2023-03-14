@@ -8,6 +8,9 @@ function set-backlight --description 'Set backlight with ddcutil on 2 monitors +
 		ddcutil setvcp 0x10 $brightness -d $i
 	end
 
-	set -l brightness_calc (math "$brightness*960")
+	set -l max_val (qdbus local.org_kde_powerdevil /org/kde/Solid/PowerManagement/Actions/BrightnessControl brightnessMax)
+	set -l step_val (math "$max_val/100")
+	set -l brightness_calc (math "$brightness*$step_val")
+	echo "Calling dbus with max. value $max_val and steps of $step_val"
 	qdbus local.org_kde_powerdevil /org/kde/Solid/PowerManagement/Actions/BrightnessControl setBrightness $brightness_calc
 end
