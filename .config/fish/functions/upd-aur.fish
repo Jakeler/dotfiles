@@ -10,7 +10,18 @@ function upd-aur --description 'Update pkgbuild to new version'
 	# Acutally build the damn thing
 	makepkg -Cfsi
 
-        # Use aurpublish hooks, does not need -m "Update to $new_ver ($new_rel)"
-	git commit -v -a
+	# Run standard checks
+	set -l build_pkg (basename $PWD)-$new_ver-$new_rel-x86_64.pkg.tar.zst
+	echo (set_color blue)"Running namcap $build_pkg"(set_color normal)
+	namcap $build_pkg
+	echo
 
+	read -l -n1 -P 'Commit? (y/N)' confirmed
+	switch $confirmed
+		case Y y
+			# Use aurpublish hooks, does not need -m "Update to $new_ver ($new_rel)"
+			git commit -v -a
+		case *
+			return 1
+	end
 end
